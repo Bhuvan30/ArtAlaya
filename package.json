@@ -1,19 +1,20 @@
 {
-  "name": "kalakriti",
+  "name": "ArtAlaya",
   "version": "1.0.0",
-  "description": "कलाkriti is an e-commerce platform that seeks to improve the online market for small-town and rural handicrafts companies. By offering a shared platform for the production, marketing, and sale of high-quality handicrafts and products, this application seeks to promote the Indian handicraft industry globally.",
+  "description": "ArtAlaya is an e-commerce platform that seeks to improve the online market for small-town and rural handicrafts companies. By offering a shared platform for the production, marketing, and sale of high-quality handicrafts and products, this application seeks to promote the Indian handicraft industry globally.",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "python": "uvicorn backend.image_recognition_api:app --reload --port 8000",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run python\"",
     "data:import": "node backend/seeder",
     "data:destroy": "node backend/seeder -d"
   },
-  "author": "kalakriti",
-  "license": "MIT",
+  "author": "ArtAlaya",
+  "license": "REVA",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",

@@ -6,6 +6,7 @@ import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
 import logo from "../assets/images/logobgrm.png";
+import ImageRecognitionUpload from "./ImageRecognitionUpload";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -40,6 +41,11 @@ const Header = () => {
           />
           <Navbar.Collapse className="flex-gap" id="basic-navbar-nav">
             <Route render={({ history }) => <SearchBox history={history} />} />
+            <Route
+              render={({ history }) => (
+                <ImageRecognitionUpload history={history} />
+              )}
+            />
             <Nav className="ml-auto">
               <LinkContainer to="/blog">
                 <Nav.Link>

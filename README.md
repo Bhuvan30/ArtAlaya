@@ -58,7 +58,7 @@ To run the ArtAlaya MERN e-commerce project locally, follow these steps:
    MONGO_URI=<your_mongo_uri>
    ```
 
-6. Run the backend frontend and imagerecognition python file server:
+6. Run the backend, frontend and image recognition python file server:
    ```
    cd backend
    npm run dev

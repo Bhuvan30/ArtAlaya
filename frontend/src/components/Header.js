@@ -47,6 +47,12 @@ const Header = () => {
               )}
             />
             <Nav className="ml-auto">
+              <LinkContainer to="/workshop">
+                <Nav.Link>
+                  <i className="fas fa-tools"></i> Workshop
+                </Nav.Link>
+              </LinkContainer>
+
               <LinkContainer to="/blog">
                 <Nav.Link>
                   <i className="fas fa-blog"></i> Blog
